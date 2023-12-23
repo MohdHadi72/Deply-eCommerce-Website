@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: bold;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0px 5px 15px rgba(103, 102, 102, 0.405);
+  z-index: 999;
+  position: static;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  font-size: 19px;
+  text-decoration: none;
+  font: bold;
+  color: black;
+  font-weight: 700;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #ff004f;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 24px;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#Hero {
+  background-image: url(siting.jpg);
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  padding: 0 50px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Hero h3 {
+  font-size: 35px;
+  font-weight: 200;
+  color: rgba(68, 66, 66, 0.684);
+}
+#Hero h1 {
+  font-size: 3.5rem;
+  color: black;
+}
+#Hero h2 {
+  font-size: 3.9rem;
+}
+#Hero p {
+  color: rgb(116, 113, 113);
+}
+
+#Hero button {
+  padding: 12px 12px;
+  margin-top: 5%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #f8f4f6;
+  background-color: black;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+#Hero button:hover {
+  color: #ff004f;
+  transform: 0.3s;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+#feacture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feacture .fe-box:hover {
+  background-color: rgba(255, 0, 81, 0.7882352941);
+  transform: 0.2s;
+}
+
+#feacture .fe-box {
+  display: inline-block;
+  width: 190px;
+  padding: 29px 10px;
+  text-align: center;
+  background-color: #cecbcb;
+  box-shadow: 20px 50px 60px rgba(73, 72, 72, 0.663);
+  border: 1px solid #d3d6d5;
+  border-radius: 14px;
+  margin: 15px 0;
+  transition: background 0.3s;
+}
+#feacture .fe-box h6 {
+  padding: 19px 8px 6px 8px;
+  font-size: 20px;
+  margin-top: 3.7%;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding-top: 4%;
+}
+
+#feacture .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(68, 66, 66, 0.684);
+}
+
+#feacture .fe-box:nth-child(1) h6 {
+  background-color: #fff2e5;
+}
+
+#feacture .fe-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+
+#feacture .fe-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+
+#feacture .fe-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+
+#feacture .fe-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+
+#Product1 {
+  text-align: center;
+}
+#Product1 h2 {
+  font-size: 4rem;
+}
+#Product1 p {
+  font-size: 19px;
+  color: rgba(92, 88, 88, 0.7098039216);
+}
+
+#Product1 .Pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+#Product1 .pro {
+  width: 21%;
+  min-width: 220px;
+  padding: 12px 15px;
+  border: 1px solid rgba(129, 127, 127, 0.51);
+  box-shadow: 20px 20px 30px rgba(31, 30, 30, 0.536);
+  margin-top: 3%;
+  background-color: rgba(231, 229, 229, 0.8156862745);
+  border-radius: 21px;
+  cursor: pointer;
+  position: relative;
+}
+
+#Product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(140, 138, 138, 0.426);
+}
+
+#Product1 .pro img {
+  width: 80%;
+  border-radius: 20px;
+}
+
+#Product1 .pro .desine {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#Product1 .pro .desine .span {
+  font-size: 21px;
+}
+
+#Product1 .pro .desine h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 19px;
+}
+
+#Product1 .pro .desine i {
+  font-size: 12px;
+  color: rgb(211, 13, 13);
+}
+
+#Product1 .pro .desine h3 {
+  padding-top: 7px;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+#Product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: rgba(255, 0, 81, 0.5764705882);
+  font-weight: 500;
+  color: #000000;
+  position: absolute;
+  border: 1px solid rgba(255, 0, 81, 0.5568627451);
+  bottom: 20px;
+  right: 10px;
+}
+
+#Banner {
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./cardslots.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 20px 20px 50px rgb(82, 81, 81);
+}
+
+button {
+  padding: 12px 12px;
+  border: 1px solid white;
+  margin-top: 1%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #f8f4f6;
+  background-color: transparent;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  color: #ff004f;
+  transform: 0.3s;
+}
+
+#set-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#set-banner .banner-box {
+  padding-left: 4%;
+  border-radius: 21px;
+  margin: 13px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(./bannerMobile.jpg);
+  min-width: 530px;
+  height: 49vh;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 24px 24px 57px rgba(89, 87, 87, 0.916);
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#banner3 .banner-box:hover {
+  border-radius: 0%;
+}
+
+#banner3 .banner-box {
+  border: 1px solid rgba(142, 140, 140, 0.89);
+  padding-left: 4%;
+  border-radius: 21px;
+  margin: 13px 12px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 22px 23px 50px rgb(24, 23, 23);
+  transition: background 0.3s;
+}
+
+#banner3 .banner-box:hover {
+  box-shadow: 22px 23px 50px rgb(22, 21, 21);
+  transform: 0.3s;
+}
+
+#Newletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-image: url(./blacknewimg.jpeg);
+  width: 90%;
+  margin-left: 4%;
+  background-repeat: no-repeat;
+  padding: 28px 27px;
+  height: 24vh;
+}
+
+#Newletter input {
+  margin-top: 1%;
+  height: 3rem;
+  padding: 0 1.23em;
+  font-size: 14px;
+  width: 100%;
+  border: 1ps solid transparent;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#Newletter button {
+  background-color: #ff004f;
+  color: white;
+  white-space: nowrap;
+  height: 3rem;
+}
+
+#Newletter .from {
+  display: flex;
+  width: 40%;
+}
+
+footer .col {
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+footer {
+  margin-top: 6%;
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bannerMargen {
+  padding: 40px 80px;
+}
+
+footer h3 {
+  font-size: 19px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ff004f;
+  margin-bottom: 12px;
+}
+
+footer a:hover {
+  color: #f6f6fa;
+}
+
+.follow {
+  padding-top: 7%;
+  padding-bottom: 16px;
+  font-size: 20px;
+  color: #ff004f;
+}
+
+footer .icons {
+  color: whitesmoke;
+  padding-top: 3%;
+}
+
+footer .icons i {
+  font-size: 20px;
+  padding: 5px 5px;
+}
+
+footer .icons .ali:hover {
+  background-color: indianred;
+  border-radius: 15px;
+}
+
+footer .icons .ali1:hover {
+  background-color: rgb(44, 51, 250);
+  border-radius: 15px;
+}
+
+footer .icons .ali2:hover {
+  background-color: rgb(2, 2, 4);
+  border-radius: 15px;
+}
+
+footer .icons .ali3:hover {
+  background-color: #0088cc;
+  border-radius: 15px;
+}
+
+footer .copyWrites {
+  text-align: center;
+  width: 100%;
+}
+
+footer .row img {
+  margin-top: 3%;
+}/*# sourceMappingURL=deploy.css.map */
